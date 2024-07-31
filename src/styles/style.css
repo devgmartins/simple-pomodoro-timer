@@ -1,0 +1,120 @@
+@import "reset.css";
+@import "globals.css";
+
+/*General Configurations*/
+body {
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--bg-color);
+}
+
+.btn {
+    padding: .5rem 4rem;
+    font-size: 2.4rem;
+    color: var(--white);
+    border-radius: 1.5rem;
+
+    border: none;
+    cursor: pointer;
+}
+
+/*Container*/
+.title {
+    font-size: 4.6rem;
+    color: var(--dark-gray);
+}
+
+#content {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 3rem;
+    border: .5rem solid var(--dark-gray);
+    border-radius: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.timer {
+    font-size: 9.6rem;
+    color: var(--white);
+}
+
+.controls {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#startTimerButton {
+    background-color: var(--green);
+}
+
+#stopTimerButton {
+    background-color: var(--yellow);
+}
+
+#resetTimerButton {
+    background-color: var(--red);
+}
+
+.timer-controls {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.timer-controls button {
+    border: .3rem solid var(--dark-gray);
+    color: var(--dark-gray);
+
+    background-color: var(--bg-color);
+
+    transition: .6s;
+}
+
+.timer-controls button:hover {
+    background-color: var(--dark-gray);
+    color: var(--bg-color);
+}
+
+button.current {
+    background-color: var(--dark-gray);
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content>.controls {
+        display: flex;
+    }
+
+    #content {
+        max-width: 100%;
+        border-radius: 4rem;
+        padding: 3rem;
+    }
+
+    .title {
+        font-size: 3.6rem;
+    }
+
+    .btn,
+    .timer-controls button {
+        padding: .5rem 2rem;
+        font-size: 2rem;
+    }
+}

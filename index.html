@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/styles/style.css">
+    <script type="module" src="src/js/shortBreak.js" defer></script>
+    <script src="src/js/main.js" defer></script>
+
+    <title>Pomodoro Timer</title>
+    <meta name="description" content="Pomodoro Timer">
+</head>
+
+<body>
+    <div id="container">
+        <header class="pomodoro-title">
+            <h1 class="title">Pomodoro Timer</h1>
+        </header>
+
+        <main id="content">
+            <div class="controls" id="controls">
+                <button class="btn start" id="startTimerButton">Start</button>
+                <button class="btn stop" id="stopTimerButton">Stop</button>
+                <button class="btn reset" id="resetTimerButton">Reset</button>
+            </div>
+
+            <div class="timer" id="timer">
+                25:00
+            </div>
+
+            <div class="timer-controls">
+                <button class="btn pomodoro-timer" id="btnTypePomodoro">Pomodoro</button>
+                <button class="btn short-break-timer" id="btnTypeShortBreak">Break</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
