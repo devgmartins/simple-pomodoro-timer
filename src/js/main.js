@@ -76,8 +76,6 @@ function startPomodoroCount() {
 
             updateDisplay(current);
         }
-
-        console.log("Minutes: " + pomdoroMinutes, "Seconds: " + pomodoroSeconds);
     }
 
     pomodoro = setInterval(timerInitialization, 1000);
@@ -105,8 +103,6 @@ function startBreakCount() {
 
             updateDisplay(current);
         }
-
-        console.log("Minutes: " + breakMinutes, "Seconds: " + breakSeconds);
     }
 
     shortBreak = setInterval(breakInitialization, 1000);
@@ -141,7 +137,15 @@ startButton.addEventListener("click", () => {
         startBreakCount();
     }
 })
-
 stopButton.addEventListener("click", stopCounters);
-
 resetButton.addEventListener("click", resetCounters);
+timerPomodoro.addEventListener("click", () => {
+    current = "Pomodoro";
+    updateDisplay(current);
+})
+timerShortBreak.addEventListener("click", () => {
+    breakCounts % 2 === 0 ? breakCounts += 1 : breakCounts;
+    current = "Break";
+    updateDisplay(current);
+    switchBtnCurrentTimer(current);
+})
