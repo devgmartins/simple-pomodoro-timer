@@ -142,6 +142,7 @@ resetButton.addEventListener("click", resetCounters);
 timerPomodoro.addEventListener("click", () => {
     current = "Pomodoro";
     updateDisplay(current);
+    switchBtnCurrentTimer(current);
 })
 timerShortBreak.addEventListener("click", () => {
     breakCounts % 2 === 0 ? breakCounts += 1 : breakCounts;

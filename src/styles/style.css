@@ -70,7 +70,7 @@ body {
 }
 
 .timer-controls {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 
     display: flex;
     gap: 1.5rem;
