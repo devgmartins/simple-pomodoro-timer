@@ -46,10 +46,13 @@ body {
 
 .timer {
     font-size: 9.6rem;
+    font-weight: 800;
     color: var(--white);
 }
 
 .controls {
+    margin-top: 1rem;
+
     display: flex;
     gap: 1.5rem;
 }
@@ -67,6 +70,8 @@ body {
 }
 
 .timer-controls {
+    margin-bottom: 1rem;
+
     display: flex;
     gap: 1.5rem;
 }
@@ -74,6 +79,7 @@ body {
 .timer-controls button {
     border: .3rem solid var(--dark-gray);
     color: var(--dark-gray);
+    font-weight: 800;
 
     background-color: var(--bg-color);
 
@@ -104,8 +110,8 @@ button.current {
 
     #content {
         max-width: 100%;
-        border-radius: 4rem;
-        padding: 3rem;
+        border-radius: 3rem;
+        padding: .5rem 1.5rem;
     }
 
     .title {
